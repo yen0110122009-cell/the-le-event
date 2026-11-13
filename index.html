@@ -1,419 +1,164 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Câu lạc bộ học tối — cùng học tập, rèn luyện kỷ luật và tham gia Event Cày Chuỗi Lửa Học Tập 365 ngày." name="description"/>
-<meta content="#e63946" name="theme-color"/>
-<title>Câu lạc bộ học tối</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ff784f">
+<title>Thể lệ Event tháng 11/2026 – CLB 5H Sáng</title>
 <style>
-:root{--red:#e63946;--red-dark:#c52838;--red-pale:#fff0f1;--green:#27a745;--green-dark:#1e8538;--green-pale:#e8f7ec;--ink:#20252b;--muted:#667085;--paper:#f7f9fa;--white:#fff;--line:#e7eaee;--shadow:0 8px 28px rgba(31,41,55,.08);--radius:18px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Lexend',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65}button,input,select,textarea{font:inherit}button,a,input,select{ -webkit-tap-highlight-color:transparent}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}.skip-link{position:absolute;left:-9999px;top:10px;background:white;padding:10px;z-index:2000}.skip-link:focus{left:10px}
-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:3px solid var(--red);box-shadow:0 3px 16px rgba(0,0,0,.04)}.header-inner{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{text-decoration:none;color:var(--red);font-size:1.08rem;font-weight:800;letter-spacing:-.3px;white-space:nowrap}.brand span{color:var(--green)}.menu-toggle{display:none;border:0;border-radius:10px;background:var(--red-pale);color:var(--red);font-size:1.35rem;padding:7px 12px;cursor:pointer}.nav{display:flex;align-items:center;gap:7px;list-style:none;padding:0;margin:0;flex-wrap:wrap}.nav a{display:block;padding:9px 12px;border-radius:10px;text-decoration:none;font-size:.88rem;font-weight:700;transition:.2s}.nav a:hover,.nav a.active{background:var(--red-pale);color:var(--red)}.nav .rule-link{background:var(--red);color:white;box-shadow:0 4px 12px #e639462b}.nav .code-link{background:var(--green);color:white;box-shadow:0 4px 12px #27a7452b}.nav .event-link{background:#fff3d7;color:#805b00;border:1px solid #f0d27c}
-main{max-width:1050px;margin:26px auto;padding:0 16px 34px}.page{display:none;animation:appear .22s ease}.page.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,52px) 22px;border:1px solid #f3c4c8;border-radius:24px;background:linear-gradient(130deg,#fff0f1 0%,#fff 52%,#e8f7ec 100%);text-align:center;box-shadow:var(--shadow);margin-bottom:20px}.hero:after{content:'🌙';position:absolute;right:22px;top:15px;font-size:2.5rem;opacity:.22}.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:999px;background:white;border:1px solid #f3c4c8;color:var(--red);font-size:.82rem;font-weight:800}.hero h1{font-size:clamp(1.7rem,4vw,2.65rem);line-height:1.2;letter-spacing:-1px;margin:16px auto 12px;color:var(--red);max-width:820px}.hero p{max-width:780px;margin:0 auto;color:#434b55}.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 16px;border:0;border-radius:11px;text-decoration:none;font-weight:800;font-size:.9rem;cursor:pointer;transition:transform .16s,box-shadow .16s,background .16s}.btn:hover{transform:translateY(-1px);box-shadow:0 6px 15px #20252b16}.btn-red{background:var(--red);color:white}.btn-red:hover{background:var(--red-dark)}.btn-green{background:var(--green);color:white}.btn-green:hover{background:var(--green-dark)}.btn-light{background:white;color:var(--ink);border:1px solid var(--line)}.btn-gold{background:#fff3d7;color:#805b00;border:1px solid #f0d27c}.btn-block{width:100%}.card{padding:clamp(18px,3vw,26px);border-radius:var(--radius);background:white;border:1px solid var(--line);border-left:5px solid var(--red);box-shadow:var(--shadow);margin-bottom:18px;min-width:0}.card.green{border-left-color:var(--green)}.card.gold{border-left-color:#e5b83f}.card h2{font-size:clamp(1.12rem,2.5vw,1.42rem);line-height:1.35;color:var(--red);margin:0 0 12px}.card.green h2{color:var(--green-dark)}.card.gold h2{color:#936a00}.card p{margin:8px 0}.grid-2,.grid-3{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.mini-card{height:100%;padding:17px;border-radius:14px;background:#fff;border:1px solid var(--line)}.mini-card h3{margin:0 0 6px;font-size:1rem}.mini-card p,.mini-card li{font-size:.92rem}.mini-card.good{border-top:4px solid var(--green)}.mini-card.caution{border-top:4px solid var(--red)}.mini-card.event{border-top:4px solid #e5b83f}.muted{color:var(--muted)}.pill{display:inline-block;padding:4px 10px;border-radius:999px;font-size:.8rem;font-weight:800}.pill-red{background:var(--red-pale);color:var(--red)}.pill-green{background:var(--green-pale);color:var(--green-dark)}.pill-gold{background:#fff3d7;color:#805b00}.rule-list{display:grid;gap:11px;list-style:none;padding:0;margin:15px 0}.rule-list li{padding:13px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;align-items:start}.rule-item{padding:13px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;align-items:start}.rule-item p{margin:5px 0;line-height:1.6;overflow-wrap:anywhere;word-break:normal}.rule-item p:first-child{margin-top:2px}.rule-item p:last-child{margin-bottom:2px}.rule-item .code-sample{line-height:1.55;white-space:normal}.rule-item ul{margin:8px 0;padding-left:20px}.rule-item ul li{display:list-item;grid-template-columns:none;gap:normal;padding:0;background:transparent;border:0;border-radius:0;align-items:initial;overflow-wrap:normal;word-break:normal;margin:5px 0;line-height:1.55}.rule-item li{margin:5px 0;line-height:1.55}.rule-item strong{overflow-wrap:anywhere}.code-sample{padding:12px 14px;background:var(--green-pale);border-left:4px solid var(--green);border-radius:8px;overflow-wrap:anywhere}.rule-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:var(--green-pale);font-size:1.1rem}.rule-list .rule-item>div>strong:first-child{display:block;margin-bottom:2px}.rule-item p strong,.rule-item li strong{display:inline;margin-bottom:0}.alert{padding:14px 16px;border-radius:12px;background:var(--red-pale);border:1px solid #f4b8be;color:#721c25}.success-note{padding:14px 16px;border-radius:12px;background:var(--green-pale);border:1px solid #b9e5c5;color:#175e2a}.section-head{text-align:center;margin:10px 0 22px}.section-head h1{color:var(--red);font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 6px}.section-head p{max-width:750px;margin:0 auto;color:var(--muted)}
-.quiz-top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.progress{height:10px;border-radius:999px;background:#e9f0eb;overflow:hidden;margin:14px 0 20px}.progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--green),#76d88c);transition:width .2s}.question-title{font-size:1.12rem;font-weight:800;margin:8px 0 14px}.option{display:flex;align-items:flex-start;gap:10px;width:100%;text-align:left;padding:13px 14px;border:1px solid #dce5df;border-radius:12px;background:white;margin:9px 0;cursor:pointer;transition:.15s}.option:hover{border-color:var(--green);background:#f7fff8}.option:disabled{cursor:default}.option.correct{border-color:var(--green);background:var(--green-pale)}.option.wrong{border-color:var(--red);background:var(--red-pale)}.option .letter{flex:0 0 28px;width:28px;height:28px;border-radius:8px;background:#f1f4f2;display:grid;place-items:center;font-weight:800}.quiz-feedback{margin-top:12px;padding:12px;border-radius:10px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.9rem;font-weight:700}.field input,.field select,.field textarea{width:100%;min-width:0;padding:11px 12px;border:1px solid #cfd6dc;border-radius:10px;background:white;color:var(--ink)}.field small{color:var(--muted);font-size:.8rem}.code-chips{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.code-chip{border:1px solid #b7dfc1;background:#f5fff7;color:#17652c;border-radius:999px;padding:8px 12px;font-weight:800;cursor:pointer}.code-chip.selected{background:var(--green);border-color:var(--green);color:white}.template{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;border-radius:12px;background:#f8fafb;border:1px dashed #b9c2ca;font-size:.91rem;margin-top:13px}.event-date{font-weight:800;color:#805b00}.event-prize{padding:15px;border-radius:14px;background:linear-gradient(130deg,#fff8e6,#fff);border:1px solid #f0d27c}.event-prize h3{margin:0 0 8px;color:#805b00}.prize-list{list-style:none;padding:0;margin:8px 0}.prize-list li{padding:7px 0;border-bottom:1px solid #f2e5c4}.prize-list li:last-child{border-bottom:0}.event-quote{border-left:4px solid var(--red);padding:13px 16px;background:#fff6f6;border-radius:0 12px 12px 0;font-style:italic}.check-row{display:flex;gap:10px;align-items:flex-start;margin:12px 0}.check-row input{margin-top:6px;accent-color:var(--green)}footer{text-align:center;padding:24px 15px;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line);background:white}.back-top{position:fixed;right:16px;bottom:16px;width:45px;height:45px;border:0;border-radius:50%;background:var(--red);color:white;font-size:1.2rem;box-shadow:var(--shadow);cursor:pointer;display:none}.back-top.show{display:block}.status{min-height:24px;font-weight:700;font-size:.9rem}.hidden{display:none!important}
-.question-wait{padding:11px 13px;margin:10px 0 14px;border-radius:11px;background:#fff8e6;border:1px solid #f0d27c;color:#775600;font-weight:800}
-.forced-read-gate{position:fixed;left:max(12px,calc((100% - 850px)/2));right:max(12px,calc((100% - 850px)/2));bottom:12px;z-index:1800;padding:16px;border:2px solid var(--red);border-radius:16px;background:#fff5f5;box-shadow:0 12px 36px rgba(120,20,30,.24)}
-.forced-read-gate h3{margin:0 0 6px;color:var(--red-dark);font-size:1.05rem}
-.forced-read-gate p{margin:6px 0;line-height:1.5}
-.forced-read-gate .btn{width:100%;margin-top:8px}
-.rule-item[id],.card[id]{scroll-margin-top:115px}
-@media(max-width:600px){.forced-read-gate{left:10px;right:10px;bottom:10px;padding:12px}.forced-read-gate .btn{font-size:.84rem}}
-@media(max-width:900px){.header-inner{flex-wrap:wrap}.menu-toggle{display:block}.nav{display:none;width:100%;flex-direction:column;align-items:stretch;padding:10px;background:#fff;border:1px solid var(--line);border-radius:12px}.nav.open{display:flex}.nav a{padding:12px}.grid-3{grid-template-columns:1fr}.hero:after{font-size:1.8rem;right:12px;top:10px}}@media(max-width:620px){main{margin-top:16px;padding-inline:12px}.header-inner{padding:10px 13px}.brand{font-size:.96rem;white-space:normal}.grid-2,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding:28px 15px}.hero h1{letter-spacing:-.5px}.hero-actions .btn{width:100%}.card{padding:17px}.rule-list li{grid-template-columns:30px minmax(0,1fr);padding:11px}.rule-icon{width:30px;height:30px}.event-prize{padding:12px}}
-@media(max-width:600px){.rule-item{grid-template-columns:32px minmax(0,1fr);gap:9px;padding:12px 11px}.rule-icon{width:30px;height:30px}.rule-item p{margin:6px 0 8px;line-height:1.65}.rule-item ul{padding-left:18px}.rule-item li{overflow-wrap:anywhere}.rule-list{gap:9px}.code-sample{line-height:1.6}.card p{line-height:1.65}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
-
-.member-send-instructions{margin-top:14px;padding:16px;border:2px solid #E63946;border-left-width:7px;border-radius:12px;background:linear-gradient(135deg,#FFF1F2 0%,#FFF9E8 100%);color:#5B1720;box-shadow:0 6px 18px rgba(230,57,70,.14);font-size:.91rem;line-height:1.65}
-.member-send-instructions p{margin:6px 0}
-.member-send-instructions .member-send-title{margin:0 0 9px;color:#B91C2C;font-weight:900;font-size:.98rem}
-.member-send-instructions .member-send-warning{margin-top:10px;padding:10px 12px;border-radius:8px;background:#B91C2C;color:#FFF}
-.member-flow-overlay{position:fixed;inset:0;z-index:10050;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(22,27,34,.72);backdrop-filter:blur(4px)}
-.member-flow-dialog{width:min(100%,510px);overflow:hidden;border-radius:18px;background:#FFF;box-shadow:0 22px 70px rgba(0,0,0,.35);animation:memberNoticeIn .2s ease-out;outline:none}
-.member-flow-dialog.success{border:3px solid #16803C}
-.member-flow-dialog.warning{border:3px solid #D62839}
-.member-flow-dialog-head{padding:17px 20px;color:#FFF;font-size:1.08rem;font-weight:900}
-.member-flow-dialog.success .member-flow-dialog-head{background:linear-gradient(120deg,#16803C,#27A745)}
-.member-flow-dialog.warning .member-flow-dialog-head{background:linear-gradient(120deg,#B91C2C,#E63946)}
-.member-flow-dialog-body{padding:20px;color:#252525;font-size:.98rem;line-height:1.7}
-.member-flow-dialog-body p{margin:0 0 10px}
-.member-flow-dialog-body .notice-critical{display:block;padding:11px 12px;margin-top:12px;border-radius:9px;background:#FFF0F1;color:#A31324;border:1px solid #F4A5AD}
-.member-flow-dialog-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;padding:0 20px 20px}
-.member-flow-dialog-actions .btn{min-height:46px}
-@keyframes memberNoticeIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(max-width:480px){.member-flow-dialog-body{padding:16px}.member-flow-dialog-actions{padding:0 16px 16px}.member-send-instructions{padding:13px}}
-
+:root{--coral:#f45d62;--orange:#ff8b45;--pink:#ffe6ec;--peach:#fff0e4;--ink:#392b3b;--muted:#6d5c69;--line:#ffd1c4;--white:#fffdfb;--green:#159c79;--blue:#3189d8;--purple:#8159c8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:#fff8f4;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:#b53b48}button{font:inherit;cursor:pointer}.hero{position:relative;overflow:hidden;text-align:center;padding:46px 18px 38px;background:linear-gradient(135deg,#ffe8e4,#ffd1d9 48%,#ffbd80);border-bottom:4px solid #ff9871}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:#fff7c9;opacity:.65}.hero:before{width:180px;height:180px;right:-55px;top:-60px}.hero:after{width:100px;height:100px;left:-28px;bottom:-40px}.sun{font-size:3rem;display:block;filter:drop-shadow(0 5px 8px #f7a56a)}.eyebrow{display:inline-block;background:#fff8f2;border:1px solid #ffc2b6;border-radius:99px;padding:5px 14px;font-weight:800;color:#b9444d;letter-spacing:.05em;font-size:.8rem}.hero h1{max-width:900px;margin:13px auto 10px;font-size:clamp(2rem,6vw,3.5rem);line-height:1.12;letter-spacing:-.035em;color:#b93843;text-wrap:balance}.hero h1 span{color:#ed6a35}.hero p{margin:0 auto;max-width:680px;font-weight:650;color:#71414a}.hero .date{display:inline-block;margin-top:17px;padding:8px 15px;border-radius:12px;background:#fffaf5;color:#b8423f;font-weight:800;box-shadow:0 4px 0 #f4a38d}.wrap{width:min(1120px,100% - 28px);margin:22px auto 50px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:16px}.toolbar .hint{font-size:.9rem;color:var(--muted)}.btn{border:0;border-radius:12px;padding:10px 14px;background:#fff;color:#a83c45;font-weight:800;box-shadow:0 2px 0 #f4c4b8}.btn.primary{background:linear-gradient(110deg,var(--coral),var(--orange));color:#fff;box-shadow:0 3px 0 #d95d4c}.toc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:20px;box-shadow:0 8px 24px #a8492310}.toc h2{font-size:1.15rem;margin:0 0 12px;color:#b83e4c}.toc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.toc a{display:flex;gap:9px;align-items:flex-start;padding:9px 11px;background:#fff6f2;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:650;font-size:.93rem;border:1px solid transparent}.toc a:hover,.toc a:focus{border-color:#ffad8d;background:#ffe9df}.num{flex:0 0 27px;height:27px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#f45d72,#ff984c);color:white;font-size:.82rem;font-weight:900}.section{background:var(--white);border:1px solid var(--line);border-radius:19px;padding:clamp(17px,3vw,26px);margin:18px 0;box-shadow:0 8px 24px #8f4a2810;scroll-margin-top:84px;animation:rise .45s ease both}.section h2{display:flex;align-items:center;gap:10px;margin:0 0 15px;font-size:clamp(1.2rem,3vw,1.65rem);line-height:1.3;color:#b83f4a}.section h2 .num{width:38px;height:38px;flex-basis:38px;font-size:1.05rem}.section h3{margin:18px 0 8px;font-size:1.08rem;color:#a94448}.section p{margin:9px 0}.section ul{padding-left:1.3rem}.section li{margin:6px 0}.callout{margin:14px 0;padding:13px 15px;border-radius:13px;background:#fff0e8;border:1px solid #ffb28e;border-left:5px solid var(--orange)}.callout.warning{background:#fff0f1;border-color:#ffb1bc;border-left-color:var(--coral)}.callout.good{background:#e9faf3;border-color:#a4e3cf;border-left-color:var(--green)}.important{font-weight:900;color:#c6383e}.points{display:inline-block;white-space:nowrap;font-weight:950;color:#c74331;background:#fff0cf;border:1px solid #ffd17a;border-radius:9px;padding:2px 8px}.negative{color:#c62838;background:#ffe3e6;border-color:#ffabb6}.time{font-weight:900;color:#a83b48}.table-wrap{width:100%;overflow-x:auto;border:1px solid #ffd5c6;border-radius:12px;margin:12px 0}table{border-collapse:collapse;width:100%;min-width:460px;background:#fff}th,td{text-align:left;padding:11px 13px;border-bottom:1px solid #f8ded5}th{background:#fff0e6;color:#a74735;font-size:.9rem}tr:last-child td{border-bottom:0}td:last-child,th:last-child{text-align:center}.task-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.task{border-radius:14px;border:1px solid #f7d2c8;padding:14px;background:linear-gradient(145deg,#fff9f4,#fff0ec)}.task .emoji{font-size:1.55rem}.task h3{margin:4px 0 6px;color:#8e4149}.task p{margin:5px 0}.task .points{margin-top:6px}.code-card{background:#fff7f3;border:1px solid #ffd0c1;border-radius:13px;padding:14px;margin:10px 0}.code-card h3{margin-top:0}.copyrow{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}.sample{flex:1;min-width:190px;background:white;border:1px dashed #efa894;border-radius:9px;padding:10px;font-weight:750;overflow-wrap:anywhere}.copy-btn{border:0;border-radius:9px;padding:9px 12px;background:#ff865d;color:#fff;font-weight:850}.milestones{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}.milestone{text-align:center;border-radius:13px;background:#fff3e7;border:1px solid #ffd0a3;padding:12px 6px}.milestone strong{display:block;color:#bf493a;font-size:1.1rem}.milestone span{font-size:.88rem}.prize-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.prize{border-radius:15px;padding:16px;border:1px solid #f5d1bc;background:#fff8ed}.prize:nth-child(2){background:#eef7ff;border-color:#b8dafa}.prize:nth-child(3){background:#fff0e9;border-color:#ffc3a8}.prize .medal{font-size:2rem}.prize h3{margin:4px 0;color:#a8433d}.prize p{font-size:.94rem}.formula{padding:14px;border-radius:12px;background:#fff0d9;border:1px solid #ffcf83;text-align:center;font-weight:900;color:#9c482e;overflow-wrap:anywhere}.footer{text-align:center;padding:30px 18px 38px;background:linear-gradient(120deg,#ffe9e4,#ffd4d9,#ffce9d);color:#a53d45;font-weight:800}.footer .big{font-size:1.45rem}.backtop{position:fixed;right:16px;bottom:17px;border:0;border-radius:50%;width:49px;height:49px;background:linear-gradient(145deg,#f45d72,#ff914b);color:#fff;font-size:1.25rem;box-shadow:0 5px 18px #a8463640;z-index:5;opacity:0;pointer-events:none;transform:translateY(8px);transition:.2s}.backtop.show{opacity:1;pointer-events:auto;transform:none}.mobile-toc{display:none}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@media(max-width:650px){.hero{padding:30px 14px 27px}.hero h1{font-size:clamp(1.8rem,9vw,2.5rem)}.wrap{width:calc(100% - 20px);margin-top:12px}.toc-grid{grid-template-columns:1fr}.section{padding:16px;margin:12px 0;border-radius:15px}.task-grid{grid-template-columns:1fr}.milestones{grid-template-columns:repeat(2,minmax(0,1fr))}.prize-grid{grid-template-columns:1fr}.toolbar{align-items:stretch}.toolbar .btn{flex:1}.table-wrap{border:0;overflow:visible}table{min-width:0;border-collapse:separate;border-spacing:0 8px;background:transparent}thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}tbody tr{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid #ffd5c6;border-radius:11px;overflow:hidden;margin-bottom:8px}tbody td{border:0;padding:9px 10px;text-align:left!important;overflow-wrap:anywhere}tbody td:first-child{grid-column:1/-1;background:#fff0e6;font-weight:850;border-bottom:1px solid #f8ded5}tbody td:nth-child(2){font-size:.9rem}tbody td:last-child{font-weight:900;color:#bf493a}tbody td:last-child:before{content:"Điểm: ";font-size:.78rem;color:#6d5c69;font-weight:650}.backtop{right:12px;bottom:12px}.toolbar .hint{width:100%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}@media print{body{background:white;font-size:10pt}.hero{padding:18px;background:#ffe5dd!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.wrap{width:100%;margin:10px auto}.toolbar,.backtop,.copy-btn{display:none!important}.toc{break-after:page}.section{box-shadow:none;break-inside:avoid;margin:10px 0;padding:14px}.section h2{break-after:avoid}.task-grid,.prize-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.table-wrap{overflow:visible}table{min-width:0}th,td{padding:6px}.footer{break-inside:avoid}}
 </style>
 </head>
-<body>
-<a class="skip-link" href="#main">Bỏ qua điều hướng, đến nội dung</a>
-<header><div class="header-inner">
-<a class="brand" href="#trang-chu" onclick="showPage('trang-chu');return false;">🌙 Câu lạc bộ học tối <span>📚</span></a>
-<button aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu" class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</button>
-<nav aria-label="Điều hướng chính"><ul class="nav" id="mainNav">
-<li><a class="active" data-page="trang-chu" href="#trang-chu" onclick="showPage('trang-chu');return false;">🏠 Trang chủ</a></li>
-<li><a class="rule-link" data-page="noi-quy" href="#noi-quy" onclick="showPage('noi-quy');return false;">📕 Nội quy câu lạc bộ</a></li>
-<li><a class="code-link" data-page="cap-ma" href="#cap-ma" onclick="showPage('cap-ma');return false;">🤝 Đăng ký tham gia</a></li>
-<li><a class="event-link" data-page="event" href="#event" onclick="showPage('event');return false;">🔥 Event Cày Chuỗi Lửa</a></li>
-</ul></nav></div></header>
-<main id="main">
-<section aria-labelledby="homeTitle" class="page active" id="trang-chu">
-<div class="hero"><span class="eyebrow">🌙 HỌC TẬP CA TỐI · CÙNG NHAU TIẾN BỘ</span>
-<h1 id="homeTitle">CÂU LẠC BỘ HỌC TỐI</h1>
-<p>Một không gian để cùng nhau học tập nghiêm túc, giữ lời hứa với mục tiêu của bản thân và tiến bộ từng ngày. Không cần phải giỏi nhất — hãy sẵn sàng cố gắng và đồng hành cùng nhau.</p>
-<div class="hero-actions"><button class="btn btn-red" onclick="showPage('noi-quy')">📕 Đọc nội quy câu lạc bộ</button><button class="btn btn-green" onclick="showPage('cap-ma')">🤝 Đăng ký tham gia câu lạc bộ</button><button class="btn btn-gold" onclick="showPage('event')">🔥 Khám phá Event 365 ngày</button></div>
-</div>
-<div class="card green"><h2>📚 Câu lạc bộ học tối hướng đến điều gì?</h2><div class="grid-3">
-<article class="mini-card good"><h3>🎯 Học tập nghiêm túc</h3><p>Dành thời gian tập trung cho việc học trong khung giờ buổi tối.</p></article>
-<article class="mini-card good"><h3>🔥 Rèn luyện kỷ luật</h3><p>Giữ cam kết, điểm danh đầy đủ và chủ động thực hiện quy định chung.</p></article>
-<article class="mini-card good"><h3>🤝 Cùng nhau tiến bộ</h3><p>Tìm đồng đội học tập, động viên nhau và cùng xây dựng thói quen tốt.</p></article>
-</div></div>
-<div class="card"><h2>👥 Ai nên tham gia?</h2><div class="grid-2">
-<article class="mini-card good"><h3>✅ Phù hợp nếu bạn</h3><ul><li>Muốn có môi trường học tập cùng mọi người vào buổi tối.</li><li>Sẵn sàng bật camera, điểm danh và tuân thủ nội quy.</li><li>Muốn rèn tính kỷ luật và duy trì thói quen học tập.</li><li>Tôn trọng thời gian chung, chủ động báo khi cần nghỉ.</li></ul></article>
-<article class="mini-card caution"><h3>⚠️ Có thể không phù hợp nếu bạn</h3><ul><li>Không có nhu cầu tham gia học tập vào buổi tối.</li><li>Không muốn tuân thủ quy định đổi tên Zoom, bật camera và điểm danh.</li><li>Thường xuyên không tham gia mà không thông báo.</li><li>Không sẵn sàng tôn trọng cam kết và quy định chung của nhóm.</li></ul><p class="muted">Bạn có thể cân nhắc kỹ trước khi tham gia; lựa chọn của bạn luôn được tôn trọng.</p></article>
-</div></div>
-<div class="card gold"><h2>🔥 Event Cày Chuỗi Lửa Học Tập 365</h2><p>Thử thách giúp thành viên xây dựng tính kỷ luật, duy trì thói quen học tập và kiên trì với mục tiêu trong suốt 365 ngày.</p><p><span class="pill pill-gold">Có thể lựa chọn tham gia hoặc không</span> Dù tham gia event hay không, bạn vẫn có thể sinh hoạt và học tập bình thường tại CLB.</p><button class="btn btn-gold" onclick="showPage('event')">🔥 Xem hướng dẫn điểm danh</button></div>
-<div class="success-note"><strong>🌱 Bắt đầu từ những điều cơ bản:</strong> Đọc nội quy trước, sau đó hoàn thành phần câu hỏi để tạo mẫu thông tin xin cấp mã thành viên.</div>
-<div class="card"><h2>✍️ Người tạo website</h2><p>Website này do <strong>bạn Bùi Hải Yến</strong> tạo ra với mong muốn tham gia <strong>Event đặc biệt — Cày Chuỗi Lửa Học Tập 365</strong>, đồng thời kết nối với những người có tinh thần học tập nghiêm túc.</p><p class="muted">Nếu muốn gửi thông tin xin mã thành viên hoặc đăng ký tham gia event, vui lòng gửi mẫu đã sao chép trực tiếp cho bạn Bùi Hải Yến.</p></div>
-</section>
-<section aria-labelledby="rulesTitle" class="page" id="noi-quy">
-<div class="section-head"><span class="pill pill-red">📕 Dành cho thành viên mới</span><h1 id="rulesTitle">Nội quy câu lạc bộ học tối</h1><p>📖 <strong>Bạn hãy đọc thật kỹ các nội dung trong mục này để nắm rõ cách hoạt động, nội quy và những điều cần lưu ý khi tham gia CLB nhé.</strong></p></div>
-<div class="card" id="rule-time"><h2>🕰️ Khung giờ học</h2><p>Buổi học tối được tổ chức trong khung giờ <strong>17:00–23:59</strong>. Hãy chủ động sắp xếp thời gian để tham gia nghiêm túc và đầy đủ.</p></div>
-<div class="card green" id="rule-code-process"><h2>❤️ NẾU BẠN MUỐN THAM GIA NHÓM</h2><p>Nếu bạn cảm thấy phù hợp và muốn tham gia nhóm, hãy vào phần <strong>Cấp Mã Thành Viên</strong>. Bạn cần <strong>hoàn thành toàn bộ câu hỏi</strong>, chọn đủ <strong>03 mã số thành viên theo thứ tự ưu tiên</strong>, tạo và sao chép mẫu thông tin rồi gửi trực tiếp cho <strong>bạn Bùi Hải Yến qua Zalo</strong>.</p><div class="hero-actions" style="justify-content:flex-start"><button class="btn btn-green" onclick="showPage('cap-ma')">🔢 VÀO CẤP MÃ THÀNH VIÊN</button></div></div>
-<div class="card"><h2>🔢 Các quy định cần nhớ</h2><div class="rule-list">
-<div class="rule-item" id="rule-name"><span class="rule-icon">🪪</span><div><strong>Đổi tên trong phòng Zoom</strong><p>Dùng cú pháp <strong>B[Mã số] - [Họ và tên]</strong>, ví dụ: <strong>B01 - Nguyễn Văn A</strong>.</p></div></div>
-<div class="rule-item" id="rule-camera"><span class="rule-icon">📷</span><div><strong>Camera</strong><p><strong>Bật camera 100% trong suốt thời gian học.</strong> Không sử dụng nền ảo; được phép bật <strong>Làm mờ nền/Blur</strong>. Phải quay camera rõ mặt trong suốt buổi học. Nếu dùng điện thoại, hãy để màn hình theo chiều dọc. Nếu dùng máy tính, khung hình ngang là bình thường; không cần xoay máy tính, chỉ cần giữ máy ổn định để hình ảnh không bị ngược hoặc lệch so với mọi người.</p></div></div>
-<div class="rule-item" id="rule-attendance"><span class="rule-icon">📝</span><div><strong>Cách điểm danh và cú pháp điểm danh</strong><p>Ngay khi vào phòng Zoom, thành viên cần <strong>chụp ảnh màn hình có hình ảnh rõ mặt và gửi ngay lên nhóm Zalo</strong>. Nội dung điểm danh theo cú pháp:</p><p class="code-sample"><strong>SS + [STT bài điểm danh] - [01 câu nói yêu thích] + Ảnh màn hình học</strong></p><p><strong>STT bài điểm danh</strong> là số thứ tự của bài đăng điểm danh, cần ghi tiếp nối số thứ tự trước đó. <strong>Mã số thành viên</strong> là mã riêng dùng để nhận diện từng thành viên, không thay thế cho STT bài điểm danh.</p></div></div>
-<div class="rule-item" id="rule-leave"><span class="rule-icon">📩</span><div><strong>Xin nghỉ học</strong><p>Nếu không thể tham gia buổi học, thành viên cần <strong>nhắn xin nghỉ trong nhóm trước 17:00</strong>.</p></div></div>
-<div class="rule-item" id="rule-unexcused"><span class="rule-icon">⚠️</span><div><strong>Vắng học không phép</strong><p>Trường hợp vắng học không phép, thành viên sẽ bị phạt <strong>10.000đ</strong>. Khoản phạt được <strong>thu vào ngày hôm sau</strong>.</p></div></div>
-<div class="rule-item" id="rule-contact"><span class="rule-icon">📱</span><div><strong>Tài khoản liên lạc</strong><p>Thành viên cần có <strong>tài khoản Zalo đang hoạt động</strong> để nhận thông báo, gửi bài điểm danh và liên hệ khi cần hỗ trợ.</p></div></div>
-<div class="rule-item" id="rule-fees"><span class="rule-icon">💰</span><div><strong>Phí duy trì</strong><ul><li><strong>Học sinh: 10.000đ/tháng</strong></li><li><strong>Sinh viên: 20.000đ/tháng</strong></li><li><strong>Người đi làm: 30.000đ/tháng</strong></li></ul><p>Nếu gặp khó khăn về phí duy trì, thành viên có thể <strong>chủ động xin hỗ trợ từ Admin trong nhóm</strong>.</p></div></div>
-</div></div>
-<div class="card" id="rule-participation"><h2>🤝 Tinh thần tham gia câu lạc bộ</h2><p>Thành viên cần <strong>tham gia học tập nghiêm túc và tuân thủ nội quy</strong>. Trường hợp không thực sự tham gia hoặc liên tục không thực hiện các quy định, thành viên <strong>có thể bị mời ra khỏi nhóm</strong>.</p></div>
-<div class="card alert" id="rule-camera-important"><h2>🚨 QUY ĐỊNH BẮT BUỘC: BẬT CAM 100% 📹</h2><p>Trong <strong>toàn bộ thời gian học</strong>, thành viên phải <strong>bật camera liên tục và quay rõ mặt</strong>. Nếu dùng điện thoại, hãy để màn hình theo chiều dọc. Nếu dùng máy tính, khung hình ngang là bình thường; không cần xoay máy tính, chỉ cần giữ máy ổn định để hình ảnh không bị ngược hoặc lệch so với các thành viên khác. <strong>Không dùng hình nền ảo dạng ảnh/video.</strong></p><p>✅ <strong>Được phép:</strong> Dùng nền thật hoặc bật <strong>Làm mờ nền/Blur</strong> nếu muốn bảo vệ không gian riêng tư.</p><p>❌ <strong>Không được phép:</strong> Dùng hình nền ảo, <strong>rời camera quá 09 phút</strong>, hướng camera lên trần nhà hoặc để màn hình quá tối khiến không thể xác minh rõ khuôn mặt.</p><p>💡 <strong>Lý do:</strong> Camera giúp xác nhận đúng thành viên đang học, hạn chế treo máy, tạo động lực tích cực và bảo đảm sự công bằng trong điểm danh.</p><p>⚠️ <strong>Nếu vi phạm mà không báo trước hoặc không có lý do chính đáng, thành viên có thể bị chuyển vào phòng chờ và buổi học được tính là vắng mặt/không hợp lệ.</strong></p></div>
-<div class="card alert" id="rule-under-30"><h2>⏱️ Học dưới 30 phút</h2><p><strong>Thời gian được tính từ lúc bạn gửi ảnh điểm danh trên Zalo.</strong> Nếu học dưới <strong>30 phút</strong>, buổi học được tính là <strong>vắng không phép, trừ 10 điểm và đóng 10.000đ</strong>, trừ trường hợp được xem xét.</p></div>
-<div class="alert"><strong>⚠️ Trước khi tham gia:</strong> Hãy đọc kỹ các quy định, chuẩn bị tài khoản Zalo hoạt động và bảo đảm bạn có thể bật camera, điểm danh đúng cú pháp trong suốt buổi học.</div>
-<div class="hero-actions" style="margin-top:18px"><button class="btn btn-green" onclick="showPage('cap-ma')">📖 Tôi đã đọc — sang phần cấp mã</button><button class="btn btn-light" onclick="showPage('event')">🔥 Xem Event Cày Chuỗi Lửa</button></div>
-</section>
-<section aria-labelledby="codeTitle" class="page" id="cap-ma">
-<div class="section-head"><span class="pill pill-green">📖 Thử thách nội quy</span><h1 id="codeTitle">Hoàn thành câu hỏi trước khi đăng ký</h1><p>Hãy đọc nội quy và trả lời đủ 14 câu hỏi. Chỉ sau khi hoàn thành đúng toàn bộ câu hỏi, website mới hiển thị lời chúc mừng, hướng dẫn kết bạn Zalo và form đăng ký.</p></div>
-<div class="card green" id="quizGate"><h2>🔐 Kiểm tra kiến thức nội quy</h2><p>Bài kiểm tra gồm <strong>14 câu hỏi</strong>. Hãy làm theo đúng hướng dẫn của bài kiểm tra: đọc kỹ câu hỏi và lựa chọn; nếu trả lời sai, hãy quay lại đọc mục nội quy được chỉ định rồi mới tiếp tục. Chỉ khi hoàn thành đúng <strong>14/14 câu</strong>, phần chúc mừng và đăng ký mới xuất hiện.</p><div class="hero-actions" style="justify-content:flex-start"><button class="btn btn-green" onclick="showPage('noi-quy')">📕 Đọc nội quy</button><button class="btn btn-red" id="startQuiz" onclick="startQuiz()">📖 MÌNH ĐÃ ĐỌC — BẮT ĐẦU 14 CÂU</button></div></div>
-<div class="card hidden" id="quizBox"><div class="quiz-top"><strong id="questionCount">Câu 1/14</strong><span class="pill pill-green" id="scoreCount">0 câu đúng</span></div><div class="progress"><span id="progressBar"></span></div><div id="questionArea"></div><div aria-live="polite" class="quiz-feedback hidden" id="quizFeedback" role="status"></div><div class="hero-actions" style="justify-content:flex-end"><button class="btn btn-green hidden" id="nextQuestion" onclick="nextQuestion()">Câu tiếp theo →</button></div></div>
-<div class="card green hidden" id="memberFormCard"><span class="pill pill-green">🎉 Hoàn thành thử thách</span><h2 id="memberSuccessTitle">🎉 Chúc mừng bạn!</h2><p><strong>Chúc mừng bạn đã trả lời đúng toàn bộ 14 câu hỏi về nội quy Câu lạc bộ học tối!</strong> Bạn đã hoàn thành phần thử thách. Hãy làm theo hướng dẫn bên dưới để đăng ký tham gia.</p>
-<div class="card"><h3>📝 Bước 1 — Điền họ và tên, tạo form</h3><p>Chỉ cần nhập đầy đủ họ và tên của bạn, sau đó nhấn <strong>“TẠO FORM ĐĂNG KÝ”</strong>. Không cần mã số thành viên, năm sinh hay thông tin nào khác.</p><form id="clubJoinForm" onsubmit="createClubJoinMessage(event)"><div class="field"><label for="clubFullName">Họ và tên</label><input id="clubFullName" name="fullName" type="text" autocomplete="name" maxlength="120" placeholder="Nhập đầy đủ họ và tên của bạn" required></div><button class="btn btn-red btn-block" type="submit" style="margin-top:14px">✉️ TẠO FORM ĐĂNG KÝ</button></form>
-<div id="clubJoinResult" class="hidden" style="margin-top:18px"><h3>📋 Bước 2 — Sao chép form</h3><p>Kiểm tra lời nhắn bên dưới rồi nhấn nút sao chép.</p><div class="template" id="clubJoinMessage"></div><button class="btn btn-green" id="copyClubJoinBtn" type="button" onclick="copyClubJoinMessage()">📋 SAO CHÉP FORM</button><p class="status" id="clubJoinStatus" aria-live="polite"></p>
-<div style="margin-top:16px"><h3>💬 Bước 3 — Mở Zalo, kết bạn trước rồi gửi form</h3><p>Nhấn nút bên dưới để mở Zalo. <strong>Trong Zalo, hãy gửi lời mời kết bạn với Bùi Hải Yến trước, sau đó dán và gửi form đã sao chép ngay trong cuộc trò chuyện nếu Zalo cho phép.</strong> Không cần chờ lời mời kết bạn được đồng ý mới gửi form.</p><a class="btn btn-red" id="clubJoinZaloBtn" href="https://zalo.me/0983346399" target="_blank" rel="noopener noreferrer" aria-disabled="true" style="opacity:.55;pointer-events:none">💬 MỞ ZALO — KẾT BẠN RỒI GỬI FORM</a><p class="muted">Website không tự gửi lời mời kết bạn hay tin nhắn. Việc gửi tin nhắn ngay có thể phụ thuộc vào giới hạn và cài đặt của Zalo.</p></div></div></div>
-</div>
-</section>
-<section aria-labelledby="eventTitle" class="page" id="event">
-<div class="hero">
-  <span class="eyebrow">🌙 CHÀO MỪNG BẠN ĐẾN VỚI CLB HỌC TỐI ✨</span>
-  <h1 id="eventTitle">CHÀO MỪNG BẠN ĐẾN VỚI CLB HỌC TỐI!</h1>
-  <p>Rất vui vì bạn đã lựa chọn đồng hành cùng CLB Học Tối!</p>
-  <p>Chúng mình hy vọng nơi đây sẽ trở thành một <strong>không gian học tập tích cực</strong>, nơi bạn tìm thấy sự tập trung, nguồn cảm hứng và động lực để từng ngày hoàn thiện bản thân. Mong rằng mỗi buổi học sẽ là một cơ hội để bạn tiến gần hơn đến mục tiêu của mình. (˶ᵔ ᵕ ᵔ˶)</p>
-</div>
+<body id="top">
+<header class="hero">
+  <span class="sun" aria-hidden="true">🌅</span>
+  <span class="eyebrow">🔥 CÙNG NHAU DẬY SỚM · CÙNG NHAU TIẾN BỘ 🔥</span>
+  <h1>THỂ LỆ EVENT THÁNG 11<br><span>– CLB 5H SÁNG –</span></h1>
+  <p>Tháng 11/2026 – Kỷ luật mỗi ngày, tiến bộ mỗi sáng.</p>
+  <div class="date">📅 01/11/2026 – 30/11/2026</div>
+</header>
+<main class="wrap">
+  <div class="toolbar">
+    <span class="hint">✨ Đọc thể lệ · Lưu ý các khung màu cam/đỏ · Chia sẻ link cho cả CLB</span>
+    <button class="btn primary" onclick="window.print()">🖨️ In / Lưu PDF</button>
+  </div>
+  <nav class="toc" aria-label="Mục lục">
+    <h2>📌 MỤC LỤC — CHẠM ĐỂ ĐẾN MỤC</h2>
+    <div class="toc-grid">
+      <a href="#muc1"><span class="num">1</span> Giới thiệu event</a>
+      <a href="#muc2"><span class="num">2</span> Điểm chuyên cần</a>
+      <a href="#muc3"><span class="num">3</span> Nhiệm vụ cố định hằng ngày</a>
+      <a href="#muc4"><span class="num">4</span> Cách gửi lời chúc, mục tiêu và kết ngày</a>
+      <a href="#muc5"><span class="num">5</span> Điểm duy trì thành viên mới</a>
+      <a href="#muc6"><span class="num">6</span> Điểm tuyển thành viên</a>
+      <a href="#muc7"><span class="num">7</span> Thưởng hoàn thành ít nhất 60% nhiệm vụ</a>
+      <a href="#muc8"><span class="num">8</span> Cơ cấu giải thưởng</a>
+      <a href="#muc9"><span class="num">9</span> Đề xuất ý tưởng event mới</a>
+      <a href="#muc10"><span class="num">10</span> Quy định chung</a>
+    </div>
+  </nav>
 
-<div class="card gold">
-  <h2>🔥 GIỚI THIỆU EVENT: CÀY CHUỖI LỬA HỌC TẬP 365</h2>
-  <p>Hiện tại, CLB đang tổ chức <strong>Event Cày Chuỗi Lửa Học Tập 365</strong> – thử thách giúp các thành viên xây dựng tính kỷ luật, duy trì thói quen học tập và kiên trì với mục tiêu trong suốt 365 ngày.</p>
-  <p>Để phù hợp với nhu cầu của mỗi người, thành viên có thể lựa chọn <strong>một trong hai hình thức</strong>:</p>
-</div>
+  <section class="section" id="muc1">
+    <h2><span class="num">1</span> 📣 GIỚI THIỆU EVENT</h2>
+    <p>Từ tháng 11/2026, CLB 5h sáng chuyển sang hình thức <strong>nhiệm vụ cố định hằng tháng</strong> để thành viên dễ theo dõi, duy trì thói quen và chủ động tham gia.</p>
+    <div class="callout">💡 <strong class="important">LÝ DO THAY ĐỔI:</strong> Ban Tổ chức đang trong giai đoạn học tập, ôn thi nên hạn chế thời gian xây dựng và quản lý các event mới.</div>
+    <p>Event cố định sẽ được duy trì <strong>cho đến khi có ý tưởng mới phù hợp</strong>. Cùng nhau xây dựng thói quen tốt, bền bỉ mỗi ngày nhé! 🌅</p>
+  </section>
 
-<div class="card green">
-  <h2>🌱 1. THÀNH VIÊN KHÔNG THAM GIA EVENT</h2>
-  <p>Nếu chưa có nhu cầu tham gia thử thách 365 ngày, bạn vẫn có thể sinh hoạt và học tập bình thường tại CLB.</p>
-  <p><strong>Cú pháp điểm danh (ví dụ minh họa):</strong></p>
-  <div class="code-sample"><strong>SS01 A01 - Cuộc gặp gỡ đẹp nhất trên thế gian là gặp được phiên bản tốt hơn của chính mình.</strong></div>
-  <div class="alert" style="margin-top:14px">⚠️ <strong>Lưu ý:</strong> A01 chỉ là mã số minh họa. Khi điểm danh, bạn cần <strong>thay A01 bằng mã số học tập cá nhân</strong> được CLB cấp.</div>
-</div>
+  <section class="section" id="muc2">
+    <h2><span class="num">2</span> ⏰ ĐIỂM CHUYÊN CẦN</h2>
+    <div class="table-wrap"><table><thead><tr><th>Khung giờ / Trạng thái</th><th>Ký hiệu</th><th>Điểm</th></tr></thead><tbody>
+      <tr><td>03:00–05:00</td><td>🟢 <strong>(T)</strong></td><td><span class="points">+30 điểm</span></td></tr>
+      <tr><td>05:01–05:30</td><td>🔵 <strong>(Y)</strong></td><td><span class="points">+20 điểm</span></td></tr>
+      <tr><td>05:31–06:00</td><td>🟠 <strong>(H)</strong></td><td><span class="points">+10 điểm</span></td></tr>
+      <tr><td>Vắng có phép</td><td>🟣 <strong>(P)</strong></td><td>0 điểm</td></tr>
+      <tr><td>Vắng không phép</td><td>🔴 <strong>(N)</strong></td><td><span class="points negative">-10 điểm</span><br><strong class="important">+ đóng 10.000đ vào quỹ CLB</strong></td></tr>
+    </tbody></table></div>
+    <div class="callout warning">🚨 <strong class="important">LƯU Ý QUAN TRỌNG:</strong> Điểm chuyên cần được cộng vào tổng điểm hợp lệ để xét <strong>GIẢI 1</strong>, nhưng <strong>KHÔNG tính vào số nhiệm vụ đã hoàn thành của GIẢI 2</strong>.</div>
+  </section>
 
-<div class="card">
-  <h2>🔥 2. THÀNH VIÊN THAM GIA EVENT</h2>
-  <p>Nếu muốn thử thách bản thân với hành trình 365 ngày duy trì kỷ luật học tập, bạn có thể đăng ký tham gia Event Cày Chuỗi Lửa.</p>
-  <p><strong>Cú pháp điểm danh (ví dụ minh họa):</strong></p>
-  <div class="code-sample"><strong>SS01 Day3/365 🔥 A01 - Cuộc gặp gỡ đẹp nhất trên thế gian là gặp được phiên bản tốt hơn của chính mình.</strong></div>
-  <p><strong>Lưu ý:</strong></p>
-  <ul>
-    <li><strong>Day3/365:</strong> Số ngày tích lũy chuỗi lửa, ví dụ minh họa là ngày thứ 3.</li>
-    <li><strong>A01</strong> chỉ là mã số minh họa; hãy thay bằng mã số học tập cá nhân được CLB cấp.</li>
-  </ul>
-</div>
+  <section class="section" id="muc3">
+    <h2><span class="num">3</span> 🎯 NHIỆM VỤ CỐ ĐỊNH HẰNG NGÀY</h2>
+    <div class="task-grid">
+      <article class="task"><div class="emoji">👋</div><h3>Chào đón thành viên mới</h3><p>Gửi lời chào đón thành viên mới.</p><span class="points">+5 điểm</span></article>
+      <article class="task"><div class="emoji">📝</div><h3>Gửi mục tiêu / kế hoạch</h3><p>Gửi trong khung giờ <strong>00:00–12:00</strong>.</p><span class="points">+10 điểm</span></article>
+      <article class="task"><div class="emoji">📊</div><h3>Báo cáo kết ngày</h3><p>Gửi trong khung giờ <strong>12:00–23:59</strong>.</p><p class="important">Điều kiện: đã gửi mục tiêu hợp lệ trong cùng ngày.</p><span class="points">+20 điểm</span></article>
+    </div>
+    <div class="callout warning">🚨 <strong class="important">ĐỂ ĐƯỢC GHI NHẬN ĐIỂM:</strong> Bài đăng phải hợp lệ và được Ban Tổ chức nhận diện. Điểm nhiệm vụ cố định được dùng để xét <strong>GIẢI 1</strong> theo tổng điểm và <strong>GIẢI 2</strong> theo số nhiệm vụ hoàn thành.</div>
+  </section>
 
-<div class="success-note"><strong>🌱 Hãy lựa chọn hình thức phù hợp với mình và cùng CLB duy trì tinh thần học tập tích cực mỗi ngày!</strong></div>
-<div class="hero-actions">
-  <button class="btn btn-green" onclick="showPage('cap-ma')">🤝 Đăng ký tham gia câu lạc bộ</button>
-  <button class="btn btn-light" onclick="showPage('noi-quy')">📕 Xem nội quy câu lạc bộ</button>
-</div>
-</section>
+  <section class="section" id="muc4">
+    <h2><span class="num">4</span> 💌 CÁCH GỬI LỜI CHÚC, MỤC TIÊU VÀ KẾT NGÀY</h2>
+    <p>Thành viên có thể gửi <strong>ảnh hoặc viết nội dung trực tiếp bằng tin nhắn</strong>, không bắt buộc dùng mẫu kế hoạch cố định.</p>
+    <div class="code-card"><h3>💖 Gửi lời chúc</h3><p>Ghi mã thành viên ở đầu câu, sau đó viết lời chúc.</p><div class="copyrow"><div class="sample">B01 - Chúc mọi người một ngày mới vui vẻ và tràn đầy năng lượng!</div><button class="copy-btn" onclick="copyText('B01 - Chúc mọi người một ngày mới vui vẻ và tràn đầy năng lượng!',this)">📋 Sao chép</button></div></div>
+    <div class="code-card"><h3>🎯 Bắt đầu ngày mới</h3><p><strong>Cú pháp bắt buộc:</strong></p><div class="copyrow"><div class="sample">Mã thành viên - Ngày/Tháng/Năm - Bắt đầu ngày mới</div><button class="copy-btn" onclick="copyText('Mã thành viên - Ngày/Tháng/Năm - Bắt đầu ngày mới',this)">📋 Sao chép mẫu</button></div><p><strong>Ví dụ:</strong></p><div class="copyrow"><div class="sample">B01 - 01/11/2026 - Bắt đầu ngày mới</div><button class="copy-btn" onclick="copyText('B01 - 01/11/2026 - Bắt đầu ngày mới',this)">📋 Sao chép ví dụ</button></div><p>Sau đó gửi ảnh mục tiêu hoặc viết mục tiêu bằng tin nhắn.</p></div>
+    <div class="code-card"><h3>⭐ Kết ngày</h3><p><strong>Cú pháp bắt buộc:</strong></p><div class="copyrow"><div class="sample">Mã thành viên - Ngày/Tháng/Năm - Kết ngày</div><button class="copy-btn" onclick="copyText('Mã thành viên - Ngày/Tháng/Năm - Kết ngày',this)">📋 Sao chép mẫu</button></div><p><strong>Ví dụ:</strong></p><div class="copyrow"><div class="sample">B01 - 01/11/2026 - Kết ngày</div><button class="copy-btn" onclick="copyText('B01 - 01/11/2026 - Kết ngày',this)">📋 Sao chép ví dụ</button></div><p>Sau đó gửi ảnh kết quả hoặc viết nội dung tổng kết.</p></div>
+    <div class="callout warning">🚨 <strong class="important">NHỚ THAY MÃ THÀNH VIÊN:</strong> B01 chỉ là mã ví dụ. Mỗi người phải thay bằng mã thành viên của mình. Ghi đúng <strong>ngày/tháng/năm</strong> và đúng cụm từ quy định để Ban Tổ chức dễ điểm danh, tính điểm.</div>
+  </section>
+
+  <section class="section" id="muc5">
+    <h2><span class="num">5</span> 🤝 ĐIỂM DUY TRÌ THÀNH VIÊN MỚI</h2>
+    <p>Người giới thiệu nhận điểm theo từng mốc duy trì hợp lệ của thành viên mới:</p>
+    <div class="milestones">
+      <div class="milestone">🌱<span>Duy trì đủ</span><strong>3 ngày</strong><b class="points">+5 điểm</b></div>
+      <div class="milestone">🌿<span>Duy trì đủ</span><strong>6 ngày</strong><b class="points">+5 điểm</b></div>
+      <div class="milestone">🌼<span>Duy trì đủ</span><strong>9 ngày</strong><b class="points">+5 điểm</b></div>
+      <div class="milestone">🌳<span>Duy trì đủ</span><strong>12 ngày</strong><b class="points">+5 điểm</b></div>
+    </div>
+    <div class="callout good">🏆 <strong>TỔNG CỘNG: +20 ĐIỂM</strong> cho người giới thiệu khi thành viên mới đạt đủ 12 ngày.</div>
+    <p><strong class="important">Điểm được cộng theo từng mốc</strong>, không cộng lại toàn bộ ở mỗi mốc. Ban Tổ chức theo dõi và xác nhận các mốc hợp lệ.</p>
+  </section>
+
+  <section class="section" id="muc6">
+    <h2><span class="num">6</span> 👥 ĐIỂM TUYỂN THÀNH VIÊN</h2>
+    <p>Các mốc thưởng được cộng dồn như sau:</p>
+    <div class="table-wrap"><table><thead><tr><th>Số thành viên đạt được</th><th>Điểm thưởng thêm</th></tr></thead><tbody>
+      <tr><td>Đạt 1 thành viên</td><td><span class="points">+15 điểm</span></td></tr>
+      <tr><td>Đạt 3 thành viên</td><td><span class="points">+20 điểm</span></td></tr>
+      <tr><td>Đạt 5 thành viên</td><td><span class="points">+25 điểm</span></td></tr>
+      <tr><td>Đạt 10 thành viên</td><td><span class="points">+60 điểm</span></td></tr>
+    </tbody></table></div>
+    <div class="callout good">⭐ <strong class="important">TỔNG ĐIỂM CỘNG DỒN KHI ĐẠT MỐC 10 THÀNH VIÊN: 120 ĐIỂM.</strong></div>
+    <div class="callout warning">Điểm tuyển thành viên được cộng vào tổng điểm hợp lệ để xét <strong class="important">GIẢI 1</strong>; không tính là số nhiệm vụ hoàn thành khi xét <strong class="important">GIẢI 2</strong>.</div>
+  </section>
+
+  <section class="section" id="muc7">
+    <h2><span class="num">7</span> 🌟 THƯỞNG HOÀN THÀNH ÍT NHẤT 60% NHIỆM VỤ</h2>
+    <p>Thành viên hoàn thành <strong class="important">ÍT NHẤT 60%</strong> tổng số nhiệm vụ đủ điều kiện trong khoảng thời gian từ ngày bắt đầu tham gia event đến hết ngày <strong class="important">30/11/2026</strong> sẽ được thưởng <span class="points">+60 điểm vào tháng 12</span>.</p>
+    <h3>🧮 Công thức tính</h3>
+    <div class="formula">Tỷ lệ hoàn thành = (Số nhiệm vụ hoàn thành hợp lệ ÷ Tổng số nhiệm vụ đủ điều kiện) × 100%</div>
+    <h3>📌 Quy định cần nhớ</h3>
+    <ul>
+      <li>Chỉ tính nhiệm vụ trong thời gian thành viên tham gia event.</li>
+      <li>Nhiệm vụ trước ngày tham gia <strong class="important">KHÔNG</strong> tính vào tổng số nhiệm vụ đủ điều kiện.</li>
+      <li>Nhiệm vụ đủ điều kiện nhưng chưa hoàn thành vẫn tính vào mẫu số.</li>
+      <li>Đạt từ <strong class="important">60% trở lên</strong> sẽ nhận +60 điểm vào tháng 12.</li>
+    </ul>
+    <div class="callout good">✅ <strong>VÍ DỤ:</strong> Có 100 nhiệm vụ đủ điều kiện và hoàn thành 60 nhiệm vụ → tỷ lệ hoàn thành là <strong>60%</strong> → ĐỦ ĐIỀU KIỆN nhận thưởng +60 điểm.</div>
+  </section>
+
+  <section class="section" id="muc8">
+    <h2><span class="num">8</span> 🏆 CƠ CẤU GIẢI THƯỞNG</h2>
+    <div class="prize-grid">
+      <article class="prize"><div class="medal">🥇</div><h3>GIẢI 1</h3><strong>TỔNG ĐIỂM CAO NHẤT</strong><p>Xét toàn bộ điểm hợp lệ trong tháng, bao gồm:</p><ul><li>Điểm nhiệm vụ cố định hằng ngày.</li><li>Điểm tuyển thành viên.</li><li>Điểm chuyên cần.</li><li>Điểm duy trì thành viên mới.</li></ul><p>Nếu bằng điểm, xét thêm số nhiệm vụ cố định hợp lệ đã hoàn thành; nếu vẫn bằng nhau, phần thưởng được chia đều.</p></article>
+      <article class="prize"><div class="medal">🥈</div><h3>GIẢI 2</h3><strong>HOÀN THÀNH NHIỀU NHIỆM VỤ NHẤT</strong><p>Dành cho thành viên hoàn thành nhiều nhiệm vụ cố định hợp lệ nhất, <strong>không dựa vào tổng điểm</strong>. Điểm chuyên cần không được tính vào số nhiệm vụ hoàn thành.</p><p>Nếu đồng hạng, phần thưởng được chia đều.</p></article>
+      <article class="prize"><div class="medal">🥉</div><h3>GIẢI 3</h3><strong>TUYỂN ĐƯỢC NHIỀU THÀNH VIÊN MỚI NHẤT</strong><p>Giải phụ tùy tình hình quỹ CLB.</p><p>Nếu quỹ đủ, trao thưởng theo ngân sách. Nếu quỹ chưa đủ, phần thưởng có thể chuyển thành điểm thưởng vào tháng tiếp theo.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="muc9">
+    <h2><span class="num">9</span> 💡 ĐỀ XUẤT Ý TƯỞNG EVENT MỚI</h2>
+    <p>Thành viên được gửi ý tưởng event để Ban Tổ chức tổng hợp và cho cả CLB bình chọn.</p>
+    <div class="callout good">🎁 Nếu ý tưởng được chọn và triển khai, người đề xuất nhận <span class="points">+60 ĐIỂM THƯỞNG</span> trong tháng diễn ra event.</div>
+    <p>Đừng ngại chia sẻ ý tưởng — một ý tưởng nhỏ có thể tạo động lực lớn cho cả cộng đồng! 🌈</p>
+  </section>
+
+  <section class="section" id="muc10">
+    <h2><span class="num">10</span> 📜 QUY ĐỊNH CHUNG</h2>
+    <ul>
+      <li>Thành viên cần sử dụng <strong class="important">ĐÚNG CÚ PHÁP</strong> khi điểm danh và gửi bài.</li>
+      <li>Chỉ ghi nhận điểm cho nhiệm vụ hợp lệ.</li>
+      <li>Nhiệm vụ trước ngày tham gia không được tính vào mẫu số xét thưởng 60%.</li>
+      <li>Khuyến khích tham gia trung thực, duy trì thói quen và tôn trọng các thành viên khác.</li>
+    </ul>
+    <div class="callout warning">📌 Hãy đọc kỹ các mốc giờ, cú pháp và điều kiện nhận thưởng. Khi cần xác nhận điểm hoặc mốc duy trì, hãy theo dõi thông báo từ Ban Tổ chức.</div>
+  </section>
 </main>
-<footer>🌙 <strong>Câu lạc bộ học tối</strong> · Học tập nghiêm túc · Giữ lửa mỗi ngày · Cùng nhau tiến bộ 📚<br/><span>🌱 Cùng nhau học tập, rèn luyện kỷ luật và tiến bộ mỗi ngày.</span></footer>
-<button aria-label="Lên đầu trang" class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<div aria-hidden="true" class="member-flow-overlay" id="memberFlowNoticeOverlay">
-<div aria-describedby="memberFlowNoticeBody" aria-labelledby="memberFlowNoticeTitle" aria-modal="true" class="member-flow-dialog success" id="memberFlowNoticeDialog" role="dialog" tabindex="-1">
-<div class="member-flow-dialog-head" id="memberFlowNoticeTitle">Thông báo</div>
-<div class="member-flow-dialog-body" id="memberFlowNoticeBody"></div>
-<div class="member-flow-dialog-actions">
-<button class="btn btn-green" id="memberFlowNoticeClose" type="button">Đã hiểu</button>
-<button class="btn btn-red" id="memberFlowNoticeAction" style="display:none;" type="button">Tiếp tục</button>
-</div></div></div>
+<footer class="footer">
+  <div class="big">🌅 CẢM ƠN MỌI NGƯỜI ĐÃ ĐỒNG HÀNH CÙNG CLB 5H SÁNG! ❤️</div>
+  <p>Chúc chúng ta có một tháng 11 kỷ luật, tích cực và cùng nhau tiến bộ mỗi ngày!</p>
+  <div>🔥 Dậy sớm – Học tốt – Sống tích cực 🔥</div>
+</footer>
+<button class="backtop" id="backtop" aria-label="Quay lại đầu trang" title="Quay lại đầu trang" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <script>
-const pages=['trang-chu','noi-quy','cap-ma','event'];
-const MEMBER_QUIZ_COMPLETED_KEY='club_hoc_toi_member_quiz_completed_v1';
-let forcedReadActive=false;
-let forcedReadReady=false;
-let forcedReadTimer=null;
-let questionReadyAt=0;
-let questionWaitTimer=null;
-const QUESTION_WAIT_MS=3000;
-function showPage(id){
-  if(!pages.includes(id))return;
-  // Sau khi trả lời sai, chỉ cho phép ở trang nội quy cho đến khi đọc đủ 3 giây.
-  if(forcedReadActive && id!=='noi-quy'){
-    if(!forcedReadReady){alert('Bạn cần đọc mục nội quy được chỉ định đủ 3 giây trước khi quay lại câu hỏi nhé!');return;}
-    return;
-  }
-  document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
-  document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.dataset.page===id));
-  const nav=document.getElementById('mainNav');if(nav)nav.classList.remove('open');
-  const toggle=document.getElementById('menuToggle');if(toggle)toggle.setAttribute('aria-expanded','false');
-  window.scrollTo({top:0,behavior:'smooth'});
+function copyText(text,button){
+  const original=button.textContent;
+  const fallback=()=>{const area=document.createElement('textarea');area.value=text;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();try{document.execCommand('copy');button.textContent='✅ Đã sao chép';}catch(e){button.textContent='Không sao chép được';}area.remove();setTimeout(()=>button.textContent=original,1800);};
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(()=>{button.textContent='✅ Đã sao chép';setTimeout(()=>button.textContent=original,1800)}).catch(fallback)}else fallback();
 }
-function toggleMenu(){const nav=document.getElementById('mainNav');if(!nav)return;const opened=nav.classList.toggle('open');const toggle=document.getElementById('menuToggle');if(toggle)toggle.setAttribute('aria-expanded',String(opened));}
-window.addEventListener('scroll',()=>{const back=document.getElementById('backTop');if(back)back.classList.toggle('show',window.scrollY>350);});
-const questions=[
-{q:'Tên hiển thị trong Zoom cần theo cú pháp nào?',a:['B[Mã số] - [Họ và tên]','Chỉ họ tên','Biệt danh tùy ý'],correct:0,why:'Tên Zoom cần theo cú pháp B[Mã số] - [Họ và tên], ví dụ B01 - Nguyễn Văn A.'},
-{q:'Trong suốt buổi học, camera cần được sử dụng như thế nào?',a:['Chỉ bật lúc điểm danh','Bật camera 100% và quay rõ mặt suốt buổi','Có thể dùng nền ảo dạng video'],correct:1,why:'Camera phải bật liên tục và quay rõ mặt; không sử dụng nền ảo dạng ảnh/video.'},
-{q:'Ngay khi vào phòng Zoom, thành viên cần làm gì để điểm danh?',a:['Chụp ảnh màn hình rõ mặt và gửi ngay lên nhóm Zalo theo cú pháp','Chờ đến cuối buổi mới gửi','Chỉ nhắn một biểu tượng bất kỳ'],correct:0,why:'Cần gửi ảnh màn hình rõ mặt lên nhóm Zalo ngay khi vào phòng, kèm cú pháp điểm danh.'},
-{q:'Nếu cần xin nghỉ, bạn phải nhắn lên nhóm trước thời điểm nào?',a:['Trước 12:00','Trước 17:00','Sau 23:59'],correct:1,why:'Nếu cần nghỉ, hãy nhắn lên nhóm trước 17:00.'},
-{q:'Mức phạt cho trường hợp vắng không phép là bao nhiêu?',a:['5.000đ','10.000đ','20.000đ'],correct:1,why:'Mức phạt vắng không phép là 10.000đ, khoản phạt được thu vào ngày hôm sau.'},
-{q:'Khung giờ hoạt động học tối được quy định là khi nào?',a:['05:00–08:00','12:00–17:00','17:00–23:59'],correct:2,why:'Khung giờ hoạt động của Câu lạc bộ học tối là 17:00–23:59.'},
-{q:'Điều gì có thể xảy ra nếu thành viên không thực sự tham gia học hoặc không tuân thủ nội quy?',a:['Không có ảnh hưởng gì','Có thể được mời ra khỏi nhóm','Tự động được cấp mã mới'],correct:1,why:'Thành viên không tham gia nghiêm túc hoặc không tuân thủ nội quy có thể bị mời ra khỏi nhóm.'},
-{q:'Điều nào được phép khi sử dụng camera?',a:['Dùng nền ảo dạng ảnh/video','Bật Làm mờ nền/Blur hoặc dùng nền thật','Hướng camera lên trần nhà'],correct:1,why:'Được dùng nền thật hoặc bật Làm mờ nền/Blur; không dùng nền ảo dạng ảnh/video.'},
-{q:'Tài khoản liên lạc nào cần có để nhận thông báo và gửi điểm danh?',a:['Tài khoản Zalo hoạt động','Không cần tài khoản liên lạc','Chỉ cần email không hoạt động'],correct:0,why:'Thành viên cần có tài khoản Zalo hoạt động để nhận thông báo, gửi điểm danh và nhận hỗ trợ.'},
-{q:'STT bài điểm danh có ý nghĩa gì?',a:['Là số thứ tự của bài đăng điểm danh và phải ghi theo số tiếp theo','Là mã thành viên dùng thay mọi thông tin','Là số phút đã học'],correct:0,why:'STT là số thứ tự bài đăng điểm danh, phải ghi theo số tiếp theo và khác với mã thành viên.'},
-{q:'Nếu học dưới 30 phút, thời gian được tính từ lúc nào và buổi học được xử lý ra sao?',a:['Tính từ lúc vào Zoom; chỉ cần có mặt là hợp lệ','Tính từ lúc gửi ảnh điểm danh trên Zalo; tính vắng không phép, trừ 10 điểm và đóng 10.000đ, trừ trường hợp được xem xét','Tính từ lúc kết thúc Zoom; không có xử lý'],correct:1,why:'Thời gian học được tính từ lúc gửi ảnh điểm danh trên Zalo. Học dưới 30 phút sẽ bị tính là vắng không phép, trừ 10 điểm và đóng 10.000đ, trừ trường hợp được xem xét.'},
-{q:'Mục đích của việc đặt tên Zoom theo MÃ SỐ + HỌ TÊN là gì?',a:['Để mọi người nhận diện thành viên đúng cách','Để được miễn điểm danh','Để có thể tắt camera'],correct:0,why:'Tên đúng định dạng giúp nhận diện thành viên trong phòng học.'},
-{q:'Cú pháp điểm danh nào là đúng?',a:['SS + [STT bài điểm danh] - [01 câu nói yêu thích] + Ảnh màn hình học','Chỉ ghi mã số thành viên','Chỉ gửi câu nói yêu thích, không cần ảnh'],correct:0,why:'Cú pháp điểm danh phải có SS, STT bài điểm danh, một câu nói yêu thích và ảnh màn hình học.'},
-{q:'Mức phí duy trì mỗi tháng được phân chia như thế nào?',a:['Học sinh 10.000đ, sinh viên 20.000đ, người đi làm 30.000đ','Tất cả thành viên 10.000đ','Học sinh 30.000đ, sinh viên 20.000đ, người đi làm 10.000đ'],correct:0,why:'Mức phí duy trì là học sinh 10.000đ/tháng, sinh viên 20.000đ/tháng và người đi làm 30.000đ/tháng. Nếu gặp khó khăn, thành viên có thể chủ động xin hỗ trợ từ Admin trong nhóm.'}
-];
-let qi=0,score=0,answered=false;
-const chosenCodes=[];
-const codePool=['B101','B103','B104','B106','B107','B108','B109','B113','B114','B115','B116','B117','B119','B120','B122','B124','B125','B126','B128','B129','B130','B131','B132','B133','B134','B135','B136','B137','B138','B139','B140','B141','B142','B143','B144','B145','B146','B147','B148','B149','B151','B152','B153','B154','B155','B156','B157','B158','B159','B160','B161','B162','B163','B164','B165','B166','B167','B169','B170','B171','B172','B173','B174','B175','B176','B178','B180','B181','B182','B183','B184','B185','B186','B187','B188','B189','B190','B191','B192','B194','B197','B198','B199','B200'];
-const questionRuleTargets=['rule-name','rule-camera','rule-attendance','rule-leave','rule-unexcused','rule-time','rule-participation','rule-camera','rule-contact','rule-attendance','rule-under-30','rule-name','rule-attendance','rule-fees'];
-function startQuiz(){
-  // Giống luồng CLB 5H Sáng: nếu đã hoàn thành trên trình duyệt này, mở thẳng phần chọn mã.
-  if(localStorage.getItem(MEMBER_QUIZ_COMPLETED_KEY)==='true'){unlockMemberCodeArea();return;}
-  clearQuizTimers();
-  const gate=document.getElementById('forcedReadGate');if(gate)gate.remove();
-  forcedReadActive=false;forcedReadReady=false;qi=0;score=0;answered=false;chosenCodes.length=0;
-  document.getElementById('quizGate').classList.add('hidden');
-  document.getElementById('memberFormCard').classList.add('hidden');
-  document.getElementById('quizBox').classList.remove('hidden');
-  renderQuestion();document.getElementById('quizBox').scrollIntoView({behavior:'smooth',block:'start'});
-}
-function clearQuizTimers(){if(questionWaitTimer){clearInterval(questionWaitTimer);questionWaitTimer=null;}if(forcedReadTimer){clearInterval(forcedReadTimer);forcedReadTimer=null;}}
-function renderQuestion(){
-  const item=questions[qi];if(!item)return;answered=false;clearQuestionWaitTimer();questionReadyAt=Date.now()+QUESTION_WAIT_MS;
-  document.getElementById('questionCount').textContent=`Câu ${qi+1}/${questions.length}`;
-  document.getElementById('scoreCount').textContent=`${score} câu đúng`;
-  document.getElementById('progressBar').style.width=`${(qi/questions.length)*100}%`;
-  const feedback=document.getElementById('quizFeedback');feedback.className='quiz-feedback hidden';feedback.textContent='';
-  document.getElementById('nextQuestion').classList.add('hidden');
-  const area=document.getElementById('questionArea');
-  area.innerHTML=`<div class="question-title">${item.q}</div><div class="question-wait" id="questionWaitNotice" role="status" aria-live="polite">⏳ Hãy đọc kỹ câu hỏi và các lựa chọn. Bạn có thể trả lời sau <strong><span id="questionWaitCount">3</span></strong> giây.</div>`+item.a.map((answer,i)=>`<button type="button" class="option" data-answer-index="${i}" disabled aria-disabled="true" style="opacity:.55;cursor:not-allowed"><span class="letter">${String.fromCharCode(65+i)}</span><span>${answer}</span></button>`).join('');
-  const tick=()=>{const left=Math.max(0,Math.ceil((questionReadyAt-Date.now())/1000));const counter=document.getElementById('questionWaitCount');const notice=document.getElementById('questionWaitNotice');if(counter)counter.textContent=String(left);if(left<=0){clearQuestionWaitTimer();if(notice)notice.textContent='✅ Bạn đã đọc đủ 3 giây. Hãy chọn một câu trả lời.';area.querySelectorAll('[data-answer-index]').forEach(button=>{button.disabled=false;button.removeAttribute('aria-disabled');button.style.opacity='1';button.style.cursor='pointer';button.onclick=()=>chooseAnswer(Number(button.dataset.answerIndex));});}};
-  tick();if(Date.now()<questionReadyAt)questionWaitTimer=setInterval(tick,200);
-}
-function clearQuestionWaitTimer(){if(questionWaitTimer){clearInterval(questionWaitTimer);questionWaitTimer=null;}}
-function chooseAnswer(index){
-  if(answered||forcedReadActive||Date.now()<questionReadyAt)return;
-  const item=questions[qi];if(!item||index<0||index>=item.a.length)return;answered=true;
-  document.querySelectorAll('#questionArea .option').forEach(button=>{button.disabled=true;button.style.opacity='.55';button.style.cursor='not-allowed';button.onclick=null;});
-  const feedback=document.getElementById('quizFeedback');
-  if(index!==item.correct){
-    // Khóa điều hướng ngay lập tức, tránh bấm sang trang khác trong lúc chờ chuyển về nội quy.
-    forcedReadActive=true;forcedReadReady=false;
-    const targetId=questionRuleTargets[qi];const target=document.getElementById(targetId);const title=target?.querySelector('strong,h2')?.textContent||'Nội quy câu lạc bộ học tối';
-    feedback.className='quiz-feedback alert';feedback.innerHTML=`<strong>❌ Bạn trả lời chưa chính xác.</strong><br>Đừng lo, hãy đọc lại phần <strong>${title}</strong> trong mục <strong>Nội quy câu lạc bộ</strong>. Sau khi đọc đủ 3 giây, bạn mới được quay lại trả lời lại câu này.`;
-    feedback.scrollIntoView({behavior:'smooth',block:'nearest'});window.setTimeout(openForcedRules,350);return;
-  }
-  score++;feedback.className='quiz-feedback success-note';feedback.innerHTML=`<strong>✅ Chính xác rồi!</strong><br>${item.why}<br><button type="button" class="btn btn-green" style="margin-top:10px" onclick="nextQuestion()">${qi===questions.length-1?'🎉 HOÀN THÀNH THỬ THÁCH':'ĐÃ HIỂU — TIẾP TỤC →'}</button>`;
-  document.getElementById('scoreCount').textContent=`${score} câu đúng`;document.getElementById('progressBar').style.width=`${((qi+1)/questions.length)*100}%`;feedback.scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-function openForcedRules(){
-  clearQuestionWaitTimer();if(forcedReadTimer){clearInterval(forcedReadTimer);forcedReadTimer=null;}forcedReadActive=true;forcedReadReady=false;
-  const rules=document.getElementById('noi-quy');let gate=document.getElementById('forcedReadGate');
-  if(!gate){gate=document.createElement('div');gate.id='forcedReadGate';gate.className='forced-read-gate';gate.setAttribute('role','status');gate.setAttribute('aria-live','polite');rules.appendChild(gate);}
-  const targetId=questionRuleTargets[qi]||'rulesTitle';const target=document.getElementById(targetId);const title=target?.querySelector('strong,h2')?.textContent||'Nội quy câu lạc bộ học tối';
-  gate.innerHTML=`<h3>📕 BẮT BUỘC ĐỌC LẠI NỘI QUY</h3><p>Bạn cần đọc lại phần: <strong>${title}</strong>.</p><p id="forcedReadCountdown">Hãy đọc kỹ mục nội quy. Bạn có thể quay lại câu hỏi sau <strong>3</strong> giây.</p><button id="forcedReadReturn" type="button" class="btn btn-light" disabled>⏳ Đọc đủ 3 giây để quay lại câu hỏi</button>`;
-  showPage('noi-quy');window.setTimeout(()=>{if(target)target.scrollIntoView({behavior:'smooth',block:'center'});},180);
-  let seconds=3;const tick=()=>{seconds--;const label=document.getElementById('forcedReadCountdown');const button=document.getElementById('forcedReadReturn');if(seconds>0){if(label)label.innerHTML=`Hãy đọc kỹ mục nội quy. Bạn có thể quay lại câu hỏi sau <strong>${seconds}</strong> giây.`;return;}if(forcedReadTimer){clearInterval(forcedReadTimer);forcedReadTimer=null;}forcedReadReady=true;if(label)label.textContent='✅ Bạn đã đọc đủ 3 giây. Nhấn nút bên dưới để quay lại làm lại câu hỏi này.';if(button){button.disabled=false;button.className='btn btn-green';button.textContent='🔢 ĐÃ ĐỌC XONG — QUAY LẠI CẤP MÃ THÀNH VIÊN';button.onclick=returnToCurrentQuestion;}};
-  forcedReadTimer=setInterval(tick,1000);
-}
-function returnToCurrentQuestion(){
-  if(!forcedReadActive||!forcedReadReady)return;clearQuizTimers();forcedReadActive=false;forcedReadReady=false;const gate=document.getElementById('forcedReadGate');if(gate)gate.remove();
-  showPage('cap-ma');document.getElementById('quizBox').classList.remove('hidden');renderQuestion();document.getElementById('quizBox').scrollIntoView({behavior:'smooth',block:'start'});
-}
-function nextQuestion(){
-  if(!answered||forcedReadActive)return;
-  if(qi<questions.length-1){qi++;renderQuestion();return;}
-  document.getElementById('quizBox').classList.add('hidden');
-  if(score===questions.length){localStorage.setItem(MEMBER_QUIZ_COMPLETED_KEY,'true');unlockMemberCodeArea();}
-  else{document.getElementById('quizGate').classList.remove('hidden');document.getElementById('quizGate').innerHTML=`<h2>📖 Hãy ôn lại nội quy</h2><p>Bạn trả lời đúng ${score}/${questions.length} câu. Hãy đọc kỹ nội quy và bắt đầu lại bài kiểm tra.</p><div class="hero-actions" style="justify-content:flex-start"><button class="btn btn-red" onclick="showPage('noi-quy')">📕 Xem lại nội quy</button><button class="btn btn-green" onclick="startQuiz()">🔁 Làm lại ${questions.length} câu hỏi</button></div>`;document.getElementById('quizGate').scrollIntoView({behavior:'smooth',block:'start'});}
-}
-function unlockMemberCodeArea(){
-  document.getElementById('quizGate').classList.add('hidden');
-  document.getElementById('quizBox').classList.add('hidden');
-  const card=document.getElementById('memberFormCard');
-  document.getElementById('memberSuccessTitle').textContent=`${questions.length}/${questions.length} — Hoàn thành thử thách!`;
-  card.classList.remove('hidden');
-  card.scrollIntoView({behavior:'smooth',block:'start'});
-}
-function renderCodeChoices(){
-  const holder=document.getElementById('codeChoices');
-  chosenCodes.length=0;
-  holder.innerHTML='';
-  codePool.forEach(code=>{
-    const button=document.createElement('button');
-    button.type='button';button.className='code-chip';button.textContent=code;
-    button.setAttribute('aria-pressed','false');
-    button.onclick=()=>toggleCode(code,button);
-    holder.appendChild(button);
-  });
-  const referrer=document.getElementById('memberReferrer');
-  if(referrer&&!referrer.value.trim())referrer.value='B01 - Bùi Hải Yến';
-  updateCodeStatus();
-  resetMemberSendSteps();
-}
-function resetMemberSendSteps(){
-  memberRegistrationCopied=false;
-  const result=document.getElementById('templateResult');if(result)result.style.display='none';
-  const copyBtn=document.getElementById('memberCopyFormBtn');if(copyBtn){copyBtn.disabled=true;copyBtn.style.opacity='.55';}
-  const zaloBtn=document.getElementById('memberZaloBtn');if(zaloBtn){zaloBtn.disabled=true;zaloBtn.style.opacity='.55';}
-}
-function toggleCode(code,button){
-  const index=chosenCodes.indexOf(code);
-  if(index>=0){chosenCodes.splice(index,1);button.classList.remove('selected');button.setAttribute('aria-pressed','false');}
-  else{
-    if(chosenCodes.length>=3){document.getElementById('codeSelectionStatus').textContent='Bạn đã chọn đủ 03 mã. Muốn đổi mã, hãy bỏ chọn một mã trước nhé.';return;}
-    chosenCodes.push(code);button.classList.add('selected');button.setAttribute('aria-pressed','true');
-  }
-  resetMemberSendSteps();updateCodeStatus();
-}
-function updateCodeStatus(){
-  document.getElementById('codeSelectionStatus').textContent=chosenCodes.length===0?'Chưa chọn mã nào.':`Đã chọn ${chosenCodes.length}/3 mã theo thứ tự ưu tiên: ${chosenCodes.map((code,i)=>`${i+1}. ${code}`).join(' → ')}.`;
-}
-let memberRegistrationCopied=false;
-function showMemberFlowNotice(title,messageHtml,type='success',actionLabel='',onAction=null){
-  const overlay=document.getElementById('memberFlowNoticeOverlay');
-  const dialog=document.getElementById('memberFlowNoticeDialog');
-  const heading=document.getElementById('memberFlowNoticeTitle');
-  const body=document.getElementById('memberFlowNoticeBody');
-  const closeBtn=document.getElementById('memberFlowNoticeClose');
-  const actionBtn=document.getElementById('memberFlowNoticeAction');
-  if(!overlay||!dialog||!heading||!body||!closeBtn||!actionBtn){
-    alert(title+'\n\n'+messageHtml.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim());
-    if(typeof onAction==='function')onAction();return;
-  }
-  heading.textContent=title;body.innerHTML=messageHtml;
-  dialog.className='member-flow-dialog '+(type==='warning'?'warning':'success');
-  closeBtn.className='btn '+(type==='warning'?'btn-red':'btn-green');
-  actionBtn.style.display=actionLabel?'inline-flex':'none';actionBtn.textContent=actionLabel;
-  overlay.style.display='flex';overlay.setAttribute('aria-hidden','false');
-  const closeNotice=()=>{overlay.style.display='none';overlay.setAttribute('aria-hidden','true');closeBtn.onclick=null;actionBtn.onclick=null;};
-  closeBtn.onclick=closeNotice;
-  actionBtn.onclick=()=>{closeNotice();if(typeof onAction==='function')onAction();};
-  dialog.focus();
-}
-function buildMemberTemplateText(){
-  if(!localStorage.getItem(MEMBER_QUIZ_COMPLETED_KEY)){
-    showMemberFlowNotice('🔐 CHƯA HOÀN THÀNH THỬ THÁCH','<p>Bạn cần hoàn thành đủ toàn bộ câu hỏi trước khi tạo mẫu xin cấp mã thành viên.</p>','warning');return '';
-  }
-  if(chosenCodes.length!==3){
-    showMemberFlowNotice('⚠️ CHƯA CHỌN ĐỦ MÃ','<p>Bạn bắt buộc chọn <strong>đủ 03 mã số thành viên</strong> theo thứ tự ưu tiên trước khi tạo mẫu.</p>','warning');return '';
-  }
-  const input=document.getElementById('memberReferrer');
-  const referrer=(input&&input.value.trim())||'B01 - Bùi Hải Yến';
-  return `MẪU THÔNG TIN THÀNH VIÊN — CÂU LẠC BỘ HỌC TỐI
-
-Họ và tên: 
-Năm sinh: 
-Người giới thiệu: ${referrer}
-
-03 MÃ SỐ THÀNH VIÊN THEO THỨ TỰ ƯU TIÊN:
-1. ${chosenCodes[0]}
-2. ${chosenCodes[1]}
-3. ${chosenCodes[2]}
-
-Cam kết: Tôi đã đọc kỹ, hiểu rõ và cam kết tuân thủ toàn bộ nội quy của Câu lạc bộ học tối.
-
-Người nhận: Bạn Bùi Hải Yến qua Zalo.
-Ghi chú: Ba mã trên là nguyện vọng theo thứ tự ưu tiên, chưa phải mã chính thức. Bùi Hải Yến sẽ kiểm tra và xác nhận mã chính thức. Nếu được người khác giới thiệu, hãy sửa dòng “Người giới thiệu” trước khi gửi.`;
-}
-function createMemberTemplate(){
-  const text=buildMemberTemplateText();if(!text)return;
-  const result=document.getElementById('templateResult');
-  document.getElementById('memberTemplate').textContent=text;
-  result.style.display='block';result.scrollIntoView({behavior:'smooth',block:'center'});
-  const copyBtn=document.getElementById('memberCopyFormBtn');copyBtn.disabled=false;copyBtn.style.opacity='1';
-  memberRegistrationCopied=false;
-  const zaloBtn=document.getElementById('memberZaloBtn');zaloBtn.disabled=true;zaloBtn.style.opacity='.55';
-}
-async function copyMemberTemplate(){
-  const text=buildMemberTemplateText();if(!text)return;
-  document.getElementById('memberTemplate').textContent=text;
-  document.getElementById('templateResult').style.display='block';
-  try{
-    await navigator.clipboard.writeText(text);
-    memberRegistrationCopied=true;enableMemberZaloStep();
-    showMemberFlowNotice('✅ ĐÃ SAO CHÉP MẪU THÀNH CÔNG','<p>Mẫu đã được sao chép. Tiếp theo, hãy mở Zalo và tìm <strong>Bùi Hải Yến</strong>.</p><p>Dán mẫu vào tin nhắn, <strong>điền đầy đủ họ tên và năm sinh</strong>, rồi kiểm tra lại cả 03 mã đã chọn.</p><p class="notice-critical">🚨 <strong>Chỉ gửi khi đã điền đủ thông tin. Không gửi mẫu còn để trống!</strong></p>','success');
-    document.getElementById('memberCopyStatus') && (document.getElementById('memberCopyStatus').textContent='✅ Đã sao chép mẫu. Hãy điền thông tin trong Zalo trước khi gửi.');
-  }catch(e){
-    showMemberFlowNotice('⚠️ CHƯA SAO CHÉP ĐƯỢC TỰ ĐỘNG','<p>Hãy bôi đen và sao chép toàn bộ mẫu đang hiển thị, sau đó nhấn <strong>“TÔI ĐÃ TỰ SAO CHÉP THỦ CÔNG”</strong>.</p><p class="notice-critical">Sau khi dán mẫu vào Zalo, hãy <strong>điền đầy đủ họ tên và năm sinh</strong> rồi mới gửi cho Bùi Hải Yến.</p>','warning');
-  }
-}
-function confirmManualCopy(){
-  if(chosenCodes.length!==3||!localStorage.getItem(MEMBER_QUIZ_COMPLETED_KEY)){
-    showMemberFlowNotice('⛔ CHƯA THỂ XÁC NHẬN','<p>Bạn cần hoàn thành bài kiểm tra và chọn đủ <strong>03 mã</strong> trước nhé.</p>','warning');return;
-  }
-  memberRegistrationCopied=true;enableMemberZaloStep();
-  const status=document.getElementById('memberCopyStatus');if(status)status.textContent='✅ Đã xác nhận sao chép thủ công.';
-  showMemberFlowNotice('✅ ĐÃ XÁC NHẬN SAO CHÉP THỦ CÔNG','<p>Bạn đã xác nhận sao chép mẫu. Hãy mở Zalo và tìm <strong>Bùi Hải Yến</strong>.</p><p>Dán mẫu vào tin nhắn, <strong>điền đầy đủ họ tên và năm sinh</strong>, sau đó kiểm tra lại 03 mã.</p><p class="notice-critical">🚨 <strong>Chỉ gửi sau khi hoàn tất mọi thông tin; không gửi mẫu còn trống.</strong></p>','success');
-}
-function enableMemberZaloStep(){const btn=document.getElementById('memberZaloBtn');if(btn){btn.disabled=false;btn.style.opacity='1';}}
-function openZaloRegistration(){
-  if(!localStorage.getItem(MEMBER_QUIZ_COMPLETED_KEY)||chosenCodes.length!==3||!memberRegistrationCopied){
-    showMemberFlowNotice('⛔ CHƯA THỂ MỞ ZALO','<p>Vui lòng hoàn thành bài kiểm tra, chọn đủ <strong>03 mã thành viên</strong>, tạo mẫu rồi sao chép mẫu (hoặc xác nhận đã tự sao chép).</p>','warning');return;
-  }
-  showMemberFlowNotice('🔴 TRƯỚC KHI GỬI — HÃY LÀM ĐỦ 3 VIỆC','<p><strong>1.</strong> Mở Zalo và tìm <strong>Bùi Hải Yến</strong>.</p><p><strong>2.</strong> Dán mẫu đã sao chép và <strong>điền đầy đủ họ tên, năm sinh</strong>.</p><p><strong>3.</strong> Kiểm tra lại họ tên, năm sinh và cả 03 mã ưu tiên.</p><p class="notice-critical">🚨 <strong>Chỉ gửi tin nhắn sau khi đã điền đầy đủ và kiểm tra xong. Tuyệt đối không gửi mẫu còn để trống.</strong></p>','warning','ĐÃ KIỂM TRA — MỞ ZALO',()=>{window.location.href='https://zalo.me/0983346399';});
-}
-async function copyEventMessage(){const text=document.getElementById('eventTemplate').textContent;const status=document.getElementById('eventCopyStatus');try{await navigator.clipboard.writeText(text);status.textContent='✅ Đã sao chép tin nhắn! Nhấn nút “Mở trực tiếp Zalo Bùi Hải Yến”, sau đó dán và gửi.';}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById('eventTemplate'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Hãy sao chép phần tin nhắn đang được chọn, rồi nhấn nút “Mở trực tiếp Zalo Bùi Hải Yến” để gửi.';}}
-
-async function copyTemplate(sourceId,statusId){const text=document.getElementById(sourceId).textContent;const status=document.getElementById(statusId);try{await navigator.clipboard.writeText(text);status.textContent='✅ Đã sao chép mẫu thành công. Tiếp theo, mở Zalo và gửi cho bạn Bùi Hải Yến.';if(sourceId==='memberTemplate')document.getElementById('copyConfirmed').classList.remove('hidden');}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById(sourceId));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Hãy dùng thao tác Sao chép trên thiết bị, hoặc bấm “Tôi đã tự sao chép thủ công” sau khi sao chép xong.';}}
-
-function createClubJoinMessage(event){
-  if(event)event.preventDefault();
-  const field=document.getElementById('clubFullName');
-  const name=field?field.value.trim():'';
-  if(!name){if(field)field.focus();return;}
-  document.getElementById('clubJoinMessage').textContent=`Chào bạn Bùi Hải Yến nhé!\n\nMình tên là ${name}. Mình muốn xin tham gia Câu lạc bộ học tối. Mình đã gửi lời mời kết bạn Zalo. Bạn hướng dẫn mình các bước tiếp theo với nhé. Cảm ơn bạn! 🌙📚`;
-  document.getElementById('clubJoinResult').classList.remove('hidden');
-  const zaloBtn=document.getElementById('clubJoinZaloBtn');
-  if(zaloBtn){zaloBtn.setAttribute('aria-disabled','true');zaloBtn.style.opacity='.55';zaloBtn.style.pointerEvents='none';}
-  const copyBtn=document.getElementById('copyClubJoinBtn');if(copyBtn)copyBtn.disabled=false;
-  document.getElementById('clubJoinResult').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-async function copyClubJoinMessage(){
-  const message=document.getElementById('clubJoinMessage');
-  const status=document.getElementById('clubJoinStatus');
-  if(!message||!status)return;
-  try{await navigator.clipboard.writeText(message.textContent);status.textContent='✅ Đã sao chép form! Bây giờ hãy mở Zalo, gửi lời mời kết bạn trước rồi dán và gửi form.';}
-  catch(error){const range=document.createRange();range.selectNodeContents(message);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Phần lời nhắn đã được chọn. Hãy sao chép thủ công, sau đó mở Zalo để kết bạn và gửi form.';}
-  const zaloBtn=document.getElementById('clubJoinZaloBtn');if(zaloBtn){zaloBtn.removeAttribute('aria-disabled');zaloBtn.style.opacity='1';zaloBtn.style.pointerEvents='auto';}
-}
+const backtop=document.getElementById('backtop');
+window.addEventListener('scroll',()=>backtop.classList.toggle('show',window.scrollY>400),{passive:true});
 </script>
 </body>
 </html>
